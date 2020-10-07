@@ -1,5 +1,6 @@
 <template>
-  <div class="ratings">
+  <div>
+    <h1>{{ msg }}</h1>
     <van-list
       v-model="loading"
       :finished="finished"
@@ -23,7 +24,7 @@
 
 <script>
 export default {
-  name: 'Ratings',
+  name: 'ratings',
   data () {
     return {
       msg: '评价页面',
@@ -53,7 +54,5 @@ export default {
 }
 </script>
 
-<style lang="stylus" rel="stylesheet/stylus" scoped>
-.ratings
-text-align :center
+<style  scoped>
 </style>

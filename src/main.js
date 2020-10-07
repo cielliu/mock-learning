@@ -8,7 +8,7 @@ import router from './router'
 //  * ?????
 //  */
 // // 引入vant
-// import Vant from 'vant'
+import Vant from 'vant'
 // import 'vant/lib/index.css'
 
 // 引入axios
@@ -22,6 +22,7 @@ import '@/mock'
 
 Vue.prototype.$axios = axios
 Vue.config.productionTip = false
+Vue.use(Vant)
 
 /* eslint-disable no-new */
 new Vue({
